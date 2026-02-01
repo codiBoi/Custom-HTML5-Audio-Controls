@@ -33,7 +33,7 @@ crafted for developers who want <b>full design freedom</b> and <b>smooth UX</b>.
 ---
 
 ## 🚀 Live Demo
-<p align="center"><i>Coming soon (GitHub Pages)</i></p>
+<frame src="index.html"></frame>
 
 ---
 
