@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(65, 255, 65);
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #0000 1px, #000 1px) repeat, radial-gradient(circle at center, #88ff88 10% 40%, #000 80% 100%);
+    background-size: 20px 20px, 100%, 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #0009;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow( 0 0 10px #0f0);
+}
+
+#logo img {
+    width: 30px;
+    margin-top: 20px;
+}
+  
+#logo h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    width: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 20px #0f0;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    background: #4f4;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 90%;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: all .3s linear;
+}
+
+li a:hover::after {
+    transform: scaleX(1);
+}
+
+#home {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    background: url(../assets/svg/logo.svg) center 84px;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+#main {
+    border: 1px solid red;
+    width: 50%;
+    height: 90%;
+    border-radius: 40px;
+    background: #000a;
+    position: relative;
+}
+
+#main #title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 30px;
+    margin: 18px;
+    border-radius: 20px;
+    background: #0002;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    position: relative;
+    text-shadow: 0 0 20px #0f0;
+}
+
+#player {
+    width: 27%;
+    height: 90%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+
+#player::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 110%;
+    height: 110%;
+    background: url(../assets/posters/vlcsnap-2026-01-24-22h31m49s499.png) center;
+    background-size: cover;
+    border-radius: 70px;
+    filter: blur(20px);
+}
+
+#poster {
+    width: 90%;
+    height: 64%;
+    border-radius: 45px;
+    background: url(../assets/posters/vlcsnap-2026-01-24-22h31m49s499.png) center;
+    background-size: auto 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    position: relative;
+    transition: all .6s ease-in-out;
+    z-index: 9;
+}
+
+#poster #desc {
+    width: 90%;
+    height: max-content;
+    background: #0004;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    transition: all .6s ease-in-out;
+}
+
+#poster:hover, #poster:hover #desc {
+    background-size: auto 120%;
+}
+
+#poster:hover #desc {
+    opacity: 0;
+}
+
+#controls {
+    width: 90%;
+    height: 150px;
+    background: radial-gradient(circle at center, #0000 1px, #111 1px) repeat, radial-gradient(circle at bottom right, #0f0, #555);
+    background-size: 40px 40px, 100%, 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 70px;
+    position: relative;
+    z-index: 9;
+}
+
+#timeline {
+    width: 95%;
+    border-radius: 20px;
+    height: 60px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#timeline h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#timebar {
+    width: 75%;
+    height: 12px;
+    border-radius: 10px;
+    background: #000;
+    position: relative;
+}
+
+#timefill {
+    background: #0f0;
+    height: 100%;
+    border-radius: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px #0f0;
+}
+
+#cball {
+    position: absolute;
+    right: 0;
+    translate: 50%;
+    width: 14px;
+    height: 14px;
+    background: #afa;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+#timebar:hover #cball {
+    opacity: 1;
+}
+
+#bottom {
+    width: 90%;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#volume, #play-pause, #loop {
+    height: 80%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#volume {
+    background: #0000;
+    border-radius: 10px;
+    height: 60%;
+    justify-content: space-around;
+    transition: background .2s ease-in-out;
+}
+
+#volume:hover {
+    background: #fff1;
+}
+
+#play-pause {
+    justify-self: center;
+}
+
+#vbar {
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    background: #0f0;
+}
+
+#bottom button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0000;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s ease-in-out;
+}
+
+#bottom button:hover {
+    background: #fff1;
+}
+
+#bottom button img {
+    width: 40px;
+}
+
+#bottom #play-pause button img {
+    width: 25px;
+}
