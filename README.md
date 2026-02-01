@@ -40,7 +40,7 @@ crafted for developers who want <b>full design freedom</b> and <b>smooth UX</b>.
 ## 📸 Preview
 
 <p align="center">
-<img src="assets/preview.gif" width="80%">
+<img src="assets/preview.png" width="80%">
 </p>
 
 ---
