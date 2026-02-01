@@ -32,11 +32,6 @@ crafted for developers who want <b>full design freedom</b> and <b>smooth UX</b>.
 
 ---
 
-## 🚀 Live Demo
-<iframe src="index.html"></iframe>
-
----
-
 ## 📸 Preview
 
 <p align="center">
