@@ -33,7 +33,7 @@ crafted for developers who want <b>full design freedom</b> and <b>smooth UX</b>.
 ---
 
 ## 🚀 Live Demo
-<frame src="index.html"></frame>
+<iframe src="index.html"></iframe>
 
 ---
 
